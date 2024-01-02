@@ -292,18 +292,38 @@ ul {
     background-color: rgb(34 197 94 / 20%);
 }
 /* End Target */
-/* Start Stats  */
-.boxes {
-    flex-wrap: wrap;
-    row-gap: 20px;
-}
-.box {
+/* Start Tickets  */
+.tickets .box {
     width: calc(50% - 10px);
     border: 1px solid #ccc;
 }
 @media (max-width: 767px) {
-    .box {
+    .tickets .box {
         width: 100%;
     }
 }
-/* End Stats  */
+/* End Tickets  */
+/* Start Latest News */
+.latest-news .row:not(:last-child) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+.latest-news img {
+    width: 100px;
+    max-width: 100%;
+    margin-right: 15px;
+}
+.latest-news .info {
+    flex: 1;
+}
+.latest-news .rows .row .day {
+    background-color: #eeeeee;
+}
+@media (max-width: 767px) {
+    .latest-news .rows .row {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+/* End Latest News */
