@@ -1,329 +1,490 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
+
 *:focus {
-    outline: none;
+  outline: none;
 }
-a {
-    text-decoration: none;
-}
+
 ul {
-    list-style: none;
+  list-style: none;
+  padding: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
 ::-webkit-scrollbar {
-    width: 15px;
+  width: 15px;
 }
+
 ::-webkit-scrollbar-track {
-    background-color: white;
+  background-color: white;
 }
+
 ::-webkit-scrollbar-thumb {
-    background-color: var(--blue-color);
+  background-color: var(--blue-color);
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--blue-alt-color);
+  background-color: var(--blue-alt-color);
 }
+
 .page {
-    background-color: #f1f5f9;
-    min-height: 100vh;
+  background-color: #f1f5f9;
+  min-height: 100vh;
 }
+
 /* Start Sidebar */
 .sidebar {
-    width: 250px;
-    box-shadow: 0 0 10px #ddd;
+  width: 250px;
+  box-shadow: 0 0 10px #ddd;
 }
-.sidebar > h3 {
-    margin-bottom: 50px;
-    position: relative;
+
+.sidebar>h3 {
+  margin-bottom: 50px;
+  position: relative;
 }
-.sidebar > h3::before,
-.sidebar > h3::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+
+.sidebar>h3::before,
+.sidebar>h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.sidebar > h3::before {
-    height: 2px;
-    width: 80px;
-    background: black;
-    bottom: -20px;
+
+.sidebar>h3::before {
+  height: 2px;
+  width: 80px;
+  background: black;
+  bottom: -20px;
 }
-.sidebar > h3::after {
-    width: 16px;
-    height: 16px;
-    border: 2px solid white;
-    background: black;
-    bottom: -28px;
-    border-radius: 50%;
+
+.sidebar>h3::after {
+  width: 16px;
+  height: 16px;
+  border: 2px solid white;
+  background: black;
+  bottom: -28px;
+  border-radius: 50%;
 }
+
 .sidebar ul li a {
-    transition: 0.3s;
-    margin-bottom: 5px;
+  transition: 0.3s;
+  margin-bottom: 5px;
 }
+
 .sidebar ul li a:hover,
 .sidebar ul li .active {
-    background-color: #f6f6f6;
+  background-color: #f6f6f6;
 }
-.sidebar ul li a span {
-    font-size: 14px;
-    margin-left: 10px;
-}
-@media (max-width: 767px) {
-    .sidebar {
-        width: 58px;
-        padding: 10px;
-    }
-        .sidebar > h3 {
-            font-size: 13px;
-            margin-bottom: 15px;
-    }
-    .sidebar > h3::before,
-    .sidebar > h3::after {
-    display: none;
-}
-    .sidebar ul li a span {
-        display: none;
-    }
 
+.sidebar ul li a span {
+  font-size: 14px;
+  margin-left: 10px;
 }
+
+@media (max-width: 767px) {
+  .sidebar {
+    width: 58px;
+    padding: 10px;
+  }
+
+  .sidebar>h3 {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .sidebar>h3::before,
+  .sidebar>h3::after {
+    display: none;
+  }
+
+  .sidebar ul li a span {
+    display: none;
+  }
+}
+
 /* End Sidebar */
 /* Start Content */
 .content {
-    overflow: hidden;
+  overflow: hidden;
 }
+
 .content .head .search::before {
-    font-family: var(--fa-style-family-classic);
-    content: "\f002";
-    font-weight: 900;
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 14px;
-    color: var(--grey-color);
+  font-family: var(--fa-style-family-classic);
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--grey-color);
 }
+
 .head .search input {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-left: 5px;
-    padding-left: 30px;
-    width: 160px;
-    transition: width 0.3s;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 5px;
+  padding-left: 30px;
+  width: 160px;
+  transition: width 0.3s;
 }
+
 .head .search input::placeholder {
-    font-size: 13px;
+  font-size: 13px;
 }
+
 .head input:focus {
-    width: 200px;
+  width: 200px;
 }
+
 .head input:focus::placeholder {
-    opacity: 0;
+  opacity: 0;
 }
+
 .head .icons .notification::before {
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 10px;
-    top: -5px;
-    right: -5px;
-    border-radius: 50%;
-    background-color: var(--red-color);
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  right: -5px;
+  border-radius: 50%;
+  background-color: var(--red-color);
 }
+
 .head .icons img {
-    width: 32px;
-    height: 32px;
-    margin-left: 15px;
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
 }
+
 .page h1 {
-    margin: 20px 20px 40px;
+  margin: 20px 20px 40px;
 }
+
 .page h1::before,
 .page h1::after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    bottom: -10px;
-    left: 0;
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
 }
+
 .page h1::before {
-    width: 120px;
-    background-color: white;
+  width: 120px;
+  background-color: white;
 }
+
 .page h1::after {
-    width: 40px;
-    background-color: black;
+  width: 40px;
+  background-color: black;
 }
+
 .wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    margin-inline: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-inline: 20px;
 }
+
 @media (max-width: 767px) {
-.wrapper {
+  .wrapper {
     grid-template-columns: minmax(200px, 1fr);
     margin-inline: 10px;
     gap: 10px;
-}}
+  }
+}
+
 /* End Content */
 /* Start Welcome Widget */
 .welcome {
-    overflow: hidden;
+  overflow: hidden;
 }
+
 .welcome .intro img {
-    width: 200px;
-    margin-bottom: -15px;
+  width: 200px;
+  margin-bottom: -15px;
 }
+
 .welcome .avatar {
-    width: 64px;
-    height: 64px;
-    border: 2px solid white;
-    padding: 2px;
-    border-radius: 50%;
-    box-shadow: 0 0 5px #ddd;
-    margin-top: -32px;
-    margin-left: 20px;
+  width: 64px;
+  height: 64px;
+  border: 2px solid white;
+  padding: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #ddd;
+  margin-top: -32px;
+  margin-left: 20px;
 }
+
 .welcome .body {
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
-.welcome .body > div {
-    flex: 1;
+
+.welcome .body>div {
+  flex: 1;
 }
+
 .welcome .visit {
-    margin: 0 15px 15px auto;
-    transition: 0.3s;
+  margin: 0 15px 15px auto;
+  transition: 0.3s;
 }
+
 .welcome .visit:hover {
-    background-color: var(--blue-alt-color);
+  background-color: var(--blue-alt-color);
 }
+
 @media (max-width: 767px) {
-    .welcome .intro {
-        padding-bottom: 30px;
-    }
-    .welcome .avatar {
-        margin-left: 0;
-    }
-    .welcome .body > div:not(:last-child) {
-        margin-bottom: 20px;
-    }
+  .welcome .intro {
+    padding-bottom: 30px;
+  }
+
+  .welcome .avatar {
+    margin-left: 0;
+  }
+
+  .welcome .body>div:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
+
 /* End Welcome Widget */
 /* Start Quick Draft Widget */
 .quick-draft textarea {
-    resize: none;
-    min-height: 180px;
+  resize: none;
+  min-height: 180px;
 }
+
 .quick-draft input::placeholder,
 .quick-draft textarea::placeholder {
-    font-size: 12px;
+  font-size: 12px;
 }
+
 .quick-draft .save {
-    margin-left: auto;
-    transition: 0.3s;
-    cursor: pointer;
-    transition: 0.3s;
+  margin-left: auto;
+  transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
 .quick-draft .save:hover {
-    background-color: var(--blue-alt-color);
+  background-color: var(--blue-alt-color);
 }
+
 /* End Quick Draft Widget */
 /* Start Target */
 .targets .target-row .icon {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
 }
+
 .targets .details {
-    flex: 1;
+  flex: 1;
 }
+
 .targets .details .progress {
-    height: 4px;
+  height: 4px;
 }
-.targets .details .progress > span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+
+.targets .details .progress>span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
-.targets .details .progress > span span {
-    position: absolute;
-    bottom: 16px;
-    right: -16px;
-    color: white;
-    padding: 2px 5px;
-    border-radius: 6px;
-    font-size: 13px;
+
+.targets .details .progress>span span {
+  position: absolute;
+  bottom: 16px;
+  right: -16px;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-size: 13px;
 }
-.targets .details .progress > span span::after {
-    content: "";
-    position: absolute;
-    border: transparent;
-    border-width: 5px;
-    border-style: solid;
-    border-top-color: var(--blue-color);;
-    left: 50%;
-    bottom: -10px;
-    transform: translateX(-50%);
+
+.targets .details .progress>span span::after {
+  content: "";
+  position: absolute;
+  border: transparent;
+  border-width: 5px;
+  border-style: solid;
+  border-top-color: var(--blue-color);
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
 }
-.targets .details .progress > .blue span::after {
-    border-top-color: var(--blue-color);
+
+.targets .details .progress>.blue span::after {
+  border-top-color: var(--blue-color);
 }
-.targets .details .progress > .orange span::after {
-    border-top-color: var(--orange-color);
+
+.targets .details .progress>.orange span::after {
+  border-top-color: var(--orange-color);
 }
-.targets .details .progress > .green span::after {
-    border-top-color: var(--green-color);
+
+.targets .details .progress>.green span::after {
+  border-top-color: var(--green-color);
 }
+
 .blue .icon,
 .blue .progress {
-    background-color: rgb(0 117 255 / 20%);
+  background-color: rgb(0 117 255 / 20%);
 }
+
 .orange .icon,
 .orange .progress {
-    background-color: rgb(245 158 11 / 20%);
+  background-color: rgb(245 158 11 / 20%);
 }
+
 .green .icon,
 .green .progress {
-    background-color: rgb(34 197 94 / 20%);
+  background-color: rgb(34 197 94 / 20%);
 }
+
 /* End Target */
-/* Start Tickets  */
+/* Start Tickets    */
 .tickets .box {
-    width: calc(50% - 10px);
-    border: 1px solid #ccc;
+  width: calc(50% - 10px);
+  border: 1px solid #ccc;
 }
+
 @media (max-width: 767px) {
-    .tickets .box {
-        width: 100%;
-    }
+  .tickets .box {
+    width: 100%;
+  }
 }
-/* End Tickets  */
+
+/* End Tickets    */
 /* Start Latest News */
 .latest-news .row:not(:last-child) {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eeeeee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
 }
+
 .latest-news img {
-    width: 100px;
-    max-width: 100%;
-    margin-right: 15px;
+  width: 100px;
+  margin-right: 15px;
 }
+
 .latest-news .info {
-    flex: 1;
+  flex: 1;
 }
-.latest-news .rows .row .day {
-    background-color: #eeeeee;
-}
+
 @media (max-width: 767px) {
-    .latest-news .rows .row {
-        flex-direction: column;
-        row-gap: 10px;
-    }
+  .latest-news .rows .row {
+    flex-direction: column;
+    row-gap: 10px;
+  }
 }
+
 /* End Latest News */
+/* Start Latest Tasks */
+.latest-tasks .row:not(:last-child) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.latest-tasks .done {
+  transition: 0.3s;
+}
+
+.latest-tasks i:hover {
+  color: var(--red-color);
+  cursor: pointer;
+}
+
+.latest-tasks .row.op-5 .info h3,
+.latest-tasks .row.op-5 .info p {
+  text-decoration: line-through;
+}
+
+/* End Latest Tasks */
+/* Start Latest Uploads */
+.latest-uploads .upload:not(:last-child) {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.latest-uploads .upload img {
+  width: 45px;
+  margin-right: 15px;
+}
+
+.latest-uploads .upload .info {
+  flex-grow: 1;
+}
+
+/* End Latest Uploads */
+/* Start Last Project Progress */
+.last-progress::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/project.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.last-progress ul::before {
+  position: absolute;
+  content: "";
+  left: 11px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue-color);
+}
+
+.last-progress ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  margin-right: 15px;
+  z-index: 1;
+}
+
+.last-progress ul li.done::before {
+  background-color: var(--blue-color);
+}
+
+.last-progress ul li.current::before {
+  animation: change-color 0.8s infinite alternate;
+}
+/* End Last Project Progress */
+
+/* Start Animation */
+@keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: white;
+  }
+}
+
+/* End Animation */
