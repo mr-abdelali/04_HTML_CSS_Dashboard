@@ -195,6 +195,7 @@ a {
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   margin-inline: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -385,7 +386,7 @@ a {
 }
 
 @media (max-width: 767px) {
-  .latest-news .rows .row {
+  .latest-news .row {
     flex-direction: column;
     row-gap: 10px;
   }
@@ -475,13 +476,179 @@ a {
 .last-progress ul li.current::before {
   animation: change-color 0.8s infinite alternate;
 }
-/* End Last Project Progress */
 
+/* End Last Project Progress */
+/* Start Reminders */
+.reminders ul li .key {
+  width: 15px;
+  height: 15px;
+}
+
+.reminders ul li>.blue {
+  border-left: 2px solid var(--blue-color);
+}
+
+.reminders ul li>.green {
+  border-left: 2px solid var(--green-color);
+}
+
+.reminders ul li>.orange {
+  border-left: 2px solid var(--orange-color);
+}
+
+.reminders ul li>.red {
+  border-left: 2px solid var(--red-color);
+}
+
+/* End Reminders */
+/* Start Latest Post */
+.latest-post .user {
+  border-bottom: 1px solid #eee;
+}
+
+.latest-post .user img {
+  width: 50px;
+}
+
+.latest-post>p {
+  letter-spacing: 1.7;
+  line-height: 1.7;
+  border-bottom: 1px solid #eee;
+}
+
+/* End Latest Post */
+/* Start Social Media Stats */
+.social-media .x-twitter {
+  background-color: rgba(0, 0, 0, 0.399);
+}
+
+.social-media .x-facebook {
+  background-color: #d1e4fc;
+}
+
+.social-media .x-youtube {
+  background-color: #ffcccc;
+}
+
+.social-media .x-linkedin {
+  background-color: #cce4f0;
+}
+
+.social-media span {
+  flex: 1;
+}
+
+.social-media .i-twitter {
+  text-align: center;
+  width: 60px;
+  transition: 0.3s;
+}
+
+.social-media .i-twitter:hover {
+  transform: rotate(5deg);
+}
+
+.social-media .i-facebook {
+  text-align: center;
+  width: 60px;
+  transition: 0.3s;
+}
+.social-media .i-facebook:hover {
+  transform: rotate(5deg);
+}
+.social-media .i-youtube {
+  text-align: center;
+  width: 60px;
+  transition: 0.3s;
+}
+.social-media .i-youtube:hover {
+  transform: rotate(5deg);
+}
+.social-media .i-linkedin {
+  text-align: center;
+  width: 60px;
+  transition: 0.3s;
+}
+.social-media .i-linkedin:hover {
+  transform: rotate(5deg);
+}
+.social-media .x-twitter>span {
+  color: black;
+}
+
+.social-media .i-twitter,
+.social-media .x-twitter>a {
+  background-color: black;
+}
+
+.social-media .x-facebook>span {
+  color: #1877f2;
+}
+
+.social-media .i-facebook,
+.social-media .x-facebook>a {
+  background-color: #1877f2;
+}
+
+
+.social-media .x-youtube>span {
+  color: #ff0000;
+}
+
+.social-media .i-youtube,
+.social-media .x-youtube>a {
+  background-color: #ff0000;
+}
+
+.social-media .x-linkedin>span {
+  color: #0077b5;
+}
+
+.social-media .i-linkedin,
+.social-media .x-linkedin>a {
+  background-color: #0077b5;
+}
+
+/* End Social Media Stats */
+/* Start Projects Table */
+.responsive-table {
+  overflow-x: auto;
+}
+.responsive-table table {
+    min-width: 1000px;
+    border-spacing: 0;
+    border: 1px solid #eeeeee;
+}
+.responsive-table table thead tr td {
+  padding: 15px;
+  background-color: #eeeeee;
+}
+.responsive-table table tbody tr td {
+  padding: 15px;
+}
+.responsive-table table tbody tr td:not(:last-child) {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.responsive-table table tbody tr:hover td {
+  background-color: #faf7f7;
+}
+.responsive-table table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.responsive-table table img:not(:first-child){
+  margin-left: -20px;
+}
+/* End Projects Table */
 /* Start Animation */
 @keyframes change-color {
   from {
     background-color: var(--blue-color);
   }
+
   to {
     background-color: white;
   }
