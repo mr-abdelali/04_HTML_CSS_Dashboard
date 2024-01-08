@@ -48,27 +48,27 @@ a {
   box-shadow: 0 0 10px #ddd;
 }
 
-.sidebar>h3 {
+.sidebar > h3 {
   margin-bottom: 50px;
   position: relative;
 }
 
-.sidebar>h3::before,
-.sidebar>h3::after {
+.sidebar > h3::before,
+.sidebar > h3::after {
   content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.sidebar>h3::before {
+.sidebar > h3::before {
   height: 2px;
   width: 80px;
   background: black;
   bottom: -20px;
 }
 
-.sidebar>h3::after {
+.sidebar > h3::after {
   width: 16px;
   height: 16px;
   border: 2px solid white;
@@ -98,13 +98,13 @@ a {
     padding: 10px;
   }
 
-  .sidebar>h3 {
+  .sidebar > h3 {
     font-size: 13px;
     margin-bottom: 15px;
   }
 
-  .sidebar>h3::before,
-  .sidebar>h3::after {
+  .sidebar > h3::before,
+  .sidebar > h3::after {
     display: none;
   }
 
@@ -233,7 +233,7 @@ a {
   border-bottom: 1px solid #eee;
 }
 
-.welcome .body>div {
+.welcome .body > div {
   flex: 1;
 }
 
@@ -255,7 +255,7 @@ a {
     margin-left: 0;
   }
 
-  .welcome .body>div:not(:last-child) {
+  .welcome .body > div:not(:last-child) {
     margin-bottom: 20px;
   }
 }
@@ -299,14 +299,14 @@ a {
   height: 4px;
 }
 
-.targets .details .progress>span {
+.targets .details .progress > span {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
 }
 
-.targets .details .progress>span span {
+.targets .details .progress > span span {
   position: absolute;
   bottom: 16px;
   right: -16px;
@@ -316,7 +316,7 @@ a {
   font-size: 13px;
 }
 
-.targets .details .progress>span span::after {
+.targets .details .progress > span span::after {
   content: "";
   position: absolute;
   border: transparent;
@@ -328,15 +328,15 @@ a {
   transform: translateX(-50%);
 }
 
-.targets .details .progress>.blue span::after {
+.targets .details .progress > .blue span::after {
   border-top-color: var(--blue-color);
 }
 
-.targets .details .progress>.orange span::after {
+.targets .details .progress > .orange span::after {
   border-top-color: var(--orange-color);
 }
 
-.targets .details .progress>.green span::after {
+.targets .details .progress > .green span::after {
   border-top-color: var(--green-color);
 }
 
@@ -484,19 +484,19 @@ a {
   height: 15px;
 }
 
-.reminders ul li>.blue {
+.reminders ul li > .blue {
   border-left: 2px solid var(--blue-color);
 }
 
-.reminders ul li>.green {
+.reminders ul li > .green {
   border-left: 2px solid var(--green-color);
 }
 
-.reminders ul li>.orange {
+.reminders ul li > .orange {
   border-left: 2px solid var(--orange-color);
 }
 
-.reminders ul li>.red {
+.reminders ul li > .red {
   border-left: 2px solid var(--red-color);
 }
 
@@ -510,7 +510,7 @@ a {
   width: 50px;
 }
 
-.latest-post>p {
+.latest-post > p {
   letter-spacing: 1.7;
   line-height: 1.7;
   border-bottom: 1px solid #eee;
@@ -553,59 +553,64 @@ a {
   width: 60px;
   transition: 0.3s;
 }
+
 .social-media .i-facebook:hover {
   transform: rotate(5deg);
 }
+
 .social-media .i-youtube {
   text-align: center;
   width: 60px;
   transition: 0.3s;
 }
+
 .social-media .i-youtube:hover {
   transform: rotate(5deg);
 }
+
 .social-media .i-linkedin {
   text-align: center;
   width: 60px;
   transition: 0.3s;
 }
+
 .social-media .i-linkedin:hover {
   transform: rotate(5deg);
 }
-.social-media .x-twitter>span {
+
+.social-media .x-twitter > span {
   color: black;
 }
 
 .social-media .i-twitter,
-.social-media .x-twitter>a {
+.social-media .x-twitter > a {
   background-color: black;
 }
 
-.social-media .x-facebook>span {
+.social-media .x-facebook > span {
   color: #1877f2;
 }
 
 .social-media .i-facebook,
-.social-media .x-facebook>a {
+.social-media .x-facebook > a {
   background-color: #1877f2;
 }
 
-
-.social-media .x-youtube>span {
+.social-media .x-youtube > span {
   color: #ff0000;
 }
 
 .social-media .i-youtube,
-.social-media .x-youtube>a {
+.social-media .x-youtube > a {
   background-color: #ff0000;
 }
 
-.social-media .x-linkedin>span {
+.social-media .x-linkedin > span {
   color: #0077b5;
 }
 
 .social-media .i-linkedin,
-.social-media .x-linkedin>a {
+.social-media .x-linkedin > a {
   background-color: #0077b5;
 }
 
@@ -614,35 +619,99 @@ a {
 .responsive-table {
   overflow-x: auto;
 }
+
 .responsive-table table {
-    min-width: 1000px;
-    border-spacing: 0;
-    border: 1px solid #eeeeee;
+  min-width: 1000px;
+  border-spacing: 0;
+  border: 1px solid #eeeeee;
 }
+
 .responsive-table table thead tr td {
   padding: 15px;
   background-color: #eeeeee;
 }
+
 .responsive-table table tbody tr td {
   padding: 15px;
 }
+
 .responsive-table table tbody tr td:not(:last-child) {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
+
 .responsive-table table tbody tr:hover td {
   background-color: #faf7f7;
 }
+
 .responsive-table table img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: 2px solid white;
 }
-.responsive-table table img:not(:first-child){
+
+.responsive-table table img:not(:first-child) {
   margin-left: -20px;
 }
+
 /* End Projects Table */
+/* Start Settings */
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .settings-page {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px ;
+  }
+}
+.settings-page .site-control .close-message {
+  resize: none;
+  border: 1px solid #ccc;
+  min-height: 150px;
+}
+.toggle-checkbox {
+  appearance: none;
+}
+.toggle-switch {
+  position: relative;
+  width: 78px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggle-switch::before {
+  position: absolute;
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: bold;
+  background-color: white;
+  color: #aaa;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-color);
+}
+
+/* End Settings */
 /* Start Animation */
 @keyframes change-color {
   from {
