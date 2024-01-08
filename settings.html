@@ -55,7 +55,7 @@
           <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
             <i class="fa-regular fa-circle-user fa-fw"></i>
             <span>Friends</span>
-          </a> 
+          </a>
         </li>
         <li>
           <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
@@ -87,31 +87,83 @@
       <!-- End Head -->
       <h1 class="p-relative">Settings</h1>
       <!-- Start Settings -->
-        <div class="settings-page m-20 d-grid gap-20">
-          <!-- Start Site Control Section -->
-          <div class="site-control bg-white p-20 rad-10">
-            <h2 class="mb-10">Site Control</h2>
-            <p class="mb-20 fs-15 c-grey">Control The Website If There Is Maintenance</p>
-            <div class="between-flex mb-15">
-              <div>
-                <span class="d-block mb-10">Website Control</span>
-                <p class="fs-13 c-grey mt-5">Open/Close Website And Type The Reason</p>
-              </div>
-              <div>
-                <label>
-                  <input class="toggle-checkbox" type="checkbox">
-                  <div class="toggle-switch"></div>
-                </label> 
-              </div>
+      <div class="settings-page m-20 d-grid gap-20">
+        <!-- Start Site Control Section -->
+        <div class="site-control bg-white p-20 rad-10">
+          <h2 class="mb-10">Site Control</h2>
+          <p class="mb-20 fs-15 c-grey">Control The Website If There Is Maintenance</p>
+          <div class="between-flex mb-15">
+            <div>
+              <span class="d-block mb-10">Website Control</span>
+              <p class="fs-13 c-grey mt-5">Open/Close Website And Type The Reason</p>
             </div>
-            <textarea class="close-message fs-14 p-10 rad-6 d-block w-full" placeholder="Close Message Content"></textarea>
+            <div>
+              <label>
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
           </div>
-
-          <!-- End Site Control Section -->
+          <textarea class="close-message fs-14 p-10 rad-6 d-block w-full"
+            placeholder="Close Message Content"></textarea>
         </div>
-      <!-- End Settings -->
-  </div>
-</div>
+        <!-- End Site Control Section -->
+        <!-- Start General info -->
+        <div class="general-info bg-white p-20 rad-10">
+          <h2 class="mb-10">General Info</h2>
+          <p class="mb-20 fs-15 c-grey">General Information About Your Account</p>
+          <div>
+            <label class="d-block mb-10">First Name</label>
+            <input type="text" placeholder="First Name">
+          </div>
+          <div>
+            <label class="d-block mb-10">Last Name</label>
+            <input type="text" placeholder="Last Name">
+          </div>
+          <div>
+            <label class="d-block mb-10">Email</label>
+            <div class="between-flex">
+              <input class="link w-full mr-10" type="email" placeholder="mail@email.com" disabled>
+              <a class=" c-blue" href="#">Change</a>
+            </div>
+          </div>
+        </div>
+        <!-- End General info -->
+        <!-- Start Security info -->
+        <div class="security-info bg-white p-20 rad-10">
+          <h2 class="mb-10">Security Info</h2>
+          <p class="mb-20 fs-15 c-grey">Security Information About Your Account</p>
+          <div class="between-flex pb-30">
+            <div>
+              <span class="c-black">Password</span>
+              <p class="mt-10 fs-13 c-grey">Last Change On 25/10/2023</p>
+            </div>
+            <a class="btn-shape bg-blue c-white fs-15" href="#">Change</a>
+          </div>
+          <div class="between-flex pt-10 pb-30">
+            <div>
+              <span class="c-black">Two-Factor Authentication</span>
+              <p class="mt-10 fs-13 c-grey">Enable/Disable The Feature</p>
+            </div>
+            <div>
+              <label>
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+          <div class="between-flex mb-20 pt-10">
+            <div>
+              <span class="c-black">Devices</span>
+              <p class="mt-10 fs-13 c-grey">Check The Login Devices List</p>
+            </div>
+            <a class="btn-grey fs-15 c-black " href="#">Devices</a>
+          </div>
+        </div>
+        <!-- End Security info -->
+        <!-- End Settings -->
+      </div>
+    </div>
 </body>
 
 </html>
