@@ -837,7 +837,7 @@ a {
   border-bottom: 1px solid #eee;
   padding-bottom: 20px;
 }
-.backup-manager .servers  {
+.backup-manager .servers {
   padding-top: 20px;
 }
 @media (max-width: 767px) {
@@ -860,6 +860,130 @@ a {
 /* End Backup Manager */
 /* End Settings */
 
+/* Start Profile */
+@media (max-width: 767px) {
+  .profile-page .overview {
+    flex-direction: column;
+  }
+}
+.profile-page .overview .avatar-box {
+  width: 300px;
+}
+
+.profile-page .overview .avatar-box > img {
+  width: 120px;
+  height: 120px;
+}
+.profile-page .overview .avatar-box .level {
+  overflow: hidden;
+  height: 6px;
+  width: 140px;
+  margin: auto;
+}
+.profile-page .overview .avatar-box .level span {
+  position: absolute;
+  background-color: var(--blue-color);
+  height: 6px;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+}
+
+.profile-page .overview .info-box .box {
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .profile-page .overview .info-box {
+    border-left: 1px solid #eee;
+    
+  }
+}
+.profile-page .overview .info-box .box:hover {
+  background-color: #f9f9f9;
+}
+.profile-page .overview .info-box .box > div {
+  min-width: 250px;
+}
+.profile-page .overview .info-box h4 {
+  font-weight: normal;
+}
+
+.profile-page .overview .info-box .toggle-switch {
+  height: 18px;
+}
+@media (max-width: 767px) {
+  .profile-page .info-box .toggle-switch {
+    margin: auto;
+  }
+}
+.profile-page .overview .info-box .toggle-switch::before {
+  width: 12px;
+  height: 12px;
+  top: 3px;
+  font-size: 8px;
+}
+.profile-page .overview .info-box .toggle-checkbox:checked + .toggle-switch::before {
+  left: 62px;
+}
+/* End Profile */
+
+/* Start Skills */
+@media (max-width: 767px) {
+  .profile-page .other-data {
+    flex-direction: column;
+  }
+}
+.profile-page .other-data .skills {
+  flex-grow: 1;
+}
+.skills ul li {
+  margin-top: 15px;
+}
+.skills ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+/* End Skills */
+/* Start Latest Activities */
+.profile-page .other-data .activities {
+  flex-grow: 2;
+}
+.profile-page .other-data .activities img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+.profile-page .other-data .activities .row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.profile-page .other-data .activities .row .info {
+  flex: 1;
+}
+.profile-page .other-data .activities .row .time {
+  text-align: end;
+}
+@media (max-width: 767px) {
+  .profile-page .other-data .activities .row {
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .profile-page .other-data .activities .row img {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+  .profile-page .other-data .activities .row .info {
+    margin-top: 15px;
+  }
+  .profile-page .other-data .activities .row .time {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+
+/* End Latest Activities */
 /* Start Animation */
 @keyframes change-color {
   from {
