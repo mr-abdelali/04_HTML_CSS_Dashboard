@@ -1062,10 +1062,48 @@ a {
   top: 10px;
   right: 10px;
 }
-
 /* End Dashboard */
-
 /* End Projects */
+/* Start Courses */
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.courses-page .images img:first-child {
+  width: 100%;
+}
+.courses-page .images img:last-child {
+  width: 64px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.courses-page .info p {
+  line-height: 1.7;
+}
+.courses-page .c-info {
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  width: fit-content;
+  margin: auto;
+  z-index: 1;
+}
+.courses-page .price {
+  flex-wrap: wrap;
+  border-top: 2px solid #eee;
+  margin-top: -14px;
+  
+}
+
+
+/* End Courses */
+
+
+
+
+
 /* Start Animation */
 @keyframes change-color {
   from {
