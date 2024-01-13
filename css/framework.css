@@ -31,7 +31,9 @@
 .space-evenly {
   justify-content: space-evenly;
 }
-
+.flex-one {
+  flex: 1;
+}
 .w-fit {
   width: fit-content;
 }
@@ -286,6 +288,9 @@
 /* Start Position */
 .p-relative {
   position: relative;
+}
+.p-absolute {
+  position: absolute;
 }
 
 /* End Position */
