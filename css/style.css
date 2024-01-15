@@ -1133,6 +1133,9 @@ a {
 .friends-page .icons .icon span {
   margin-left: 10px;
 }
+.friends-page .info .btn {
+  cursor: pointer;
+}
 .friends-page .vip {
   font-size: 40px;
   opacity: 0.4;
@@ -1183,7 +1186,7 @@ a {
 }
 .files-page .files-content {
   flex: 1;
-  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .files-page .files-content .file .data img {
   width: 60px;
@@ -1197,6 +1200,59 @@ a {
   border-top: 1px solid #eee;
 }
 /* End Files */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.plans-page .plan .green {
+  background-color: var(--green-color);
+  outline: 3px solid var(--green-color);
+}
+.plans-page .plan .blue {
+  background-color: var(--blue-color);
+  outline: 3px solid var(--blue-color);
+}
+.plans-page .plan .orange {
+  background-color: var(--orange-color);
+  outline: 3px solid var(--orange-color);
+}
+.plans-page .plan .price {
+  border: 3px solid white;
+}
+.plans-page .plan .price .currancy {
+  position: relative;
+  top: -15px;
+}
+.plans-page .plan .price .cost {
+  font-size: 40px;
+}
+.plans-page .plan .access li {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.plans-page .plan .access li span {
+  flex: 1;
+}
+.plans-page .plan .access li i {
+  margin-right: 10px;
+  color: #f44336;
+}
+.plans-page .plan .access li .yes {
+  color: #22c55e;
+  font-size: 20px;
+}
+.plans-page .plan .access li .help {
+  color: var(--grey-color);
+}
+
+/* Start Plans */
+
+/* End Plans */
 
 /* Start Animation */
 @keyframes change-color {
